@@ -40,8 +40,47 @@ console.log(result.value);
 
 <docgen-index>
 
+* [`getValue(...)`](#getvalue)
+* [Interfaces](#interfaces)
+
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### getValue(...)
+
+```typescript
+getValue(options: getValueOptions) => Promise<GetValueResult>
+```
+
+Get a value from App Config. On iOS, values are obtained from UserDefaults in com.apple.configuration.managed.
+
+| Param         | Type                                                        | Description          |
+| ------------- | ----------------------------------------------------------- | -------------------- |
+| **`options`** | <code><a href="#getvalueoptions">getValueOptions</a></code> | Options to get value |
+
+**Returns:** <code>Promise&lt;<a href="#getvalueresult">GetValueResult</a>&gt;</code>
+
+**Since:** 1.0.0
+
+--------------------
+
+
+### Interfaces
+
+
+#### GetValueResult
+
+| Prop        | Type                | Description | Since |
+| ----------- | ------------------- | ----------- | ----- |
+| **`value`** | <code>string</code> | The value   | 1.0.0 |
+
+
+#### getValueOptions
+
+| Prop      | Type                | Description                | Since |
+| --------- | ------------------- | -------------------------- | ----- |
+| **`key`** | <code>string</code> | The key (or variable name) | 1.0.0 |
+
 </docgen-api>
