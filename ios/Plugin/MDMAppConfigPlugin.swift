@@ -9,8 +9,19 @@ import Capacitor
 public class MDMAppConfigPlugin: CAPPlugin {
 
     @objc func getValue(_ call: CAPPluginCall) {
-        call.resolve([
-            "value": "test"
-        ])
+        let key = call.getString("key")
+        guard let key = key else {
+            call.reject("Parameter `key` not provided.")
+            return
+        }
+        if let managedConfigDict = UserDefaults.standard.dictionary(forKey: "com.apple.configuration.managed"){
+          if let keyValue = managedConfigDict[key]{
+               call.resolve([ "value": keyValue ])
+          } else {
+            call.reject("Key not found.")
+          }
+        } else {
+            call.reject("Managed configuration not found.")
+        }
     }
 }
