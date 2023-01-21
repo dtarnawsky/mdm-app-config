@@ -7,10 +7,10 @@ import Capacitor
  */
 @objc(MDMAppConfigPlugin)
 public class MDMAppConfigPlugin: CAPPlugin {
-    
+
     @objc func getValue(_ call: CAPPluginCall) {
         call.resolve([
             "value": "test"
-        ])        
+        ])
     }
 }
