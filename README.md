@@ -2,7 +2,7 @@
 <h3 align="center">MDM App Config</h3>
 <p align="center"><strong><code>@capacitor-community/mdm-app-config</code></strong></p>
 <p align="center">
-  Capacitor community plugin for reading app configurations written by a MDM (see [appconfig.org](https://www.appconfig.org/)) such as VMWare Workspace One.
+  Capacitor community plugin for reading app configurations written by a MDM (see (appconfig.org)[https://www.appconfig.org/]) such as VMWare Workspace One.
 </p>
 
 ## Maintainers
