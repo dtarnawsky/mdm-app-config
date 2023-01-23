@@ -1,5 +1,5 @@
 {
-  "name": "@capacitor-community/mdm-app-config",
+  "name": "@capacitor-community/mdm-appconfig",
   "version": "4.0.0",
   "description": "read app config values written by a MDM",
   "main": "dist/plugin.cjs.js",
@@ -17,10 +17,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/capacitor-community/mdm-app-config.git"
+    "url": "git+https://github.com/capacitor-community/mdm-appconfig.git"
   },
   "bugs": {
-    "url": "https://github.com/capacitor-community/mdm-app-config/issues"
+    "url": "https://github.com/capacitor-community/mdm-appconfig/issues"
   },
   "keywords": [
     "capacitor",
